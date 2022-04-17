@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".ui.activity.sub.admin.AddStudent">
+    <LinearLayout
+        android:id="@+id/message_title"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="我的消息"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/answer_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_title" />
+
+    <LinearLayout
+        android:id="@+id/l_answer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/answer_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_gray"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/answer_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="5"
+            android:background="@drawable/bg_round_gray"
+            android:src="@drawable/ic_return"
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,808 @@
+@startuml
+
+title __TMS.APP's Class Diagram__\n
+
+  namespace com.example.tms {
+    class com.example.tms.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace model {
+      interface com.example.tms.model.Api {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace model {
+      namespace domain {
+        class com.example.tms.model.domain.Account {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace model {
+      namespace domain {
+        class com.example.tms.model.domain.Ask {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace model {
+      namespace domain {
+        class com.example.tms.model.domain.CheckIn {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace model {
+      namespace domain {
+        class com.example.tms.model.domain.Course {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace model {
+      namespace domain {
+        class com.example.tms.model.domain.Disscuss {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace model {
+      namespace domain {
+        class com.example.tms.model.domain.Lecturer {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace model {
+      namespace domain {
+        class com.example.tms.model.domain.Student {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace model {
+      namespace domain {
+        class com.example.tms.model.domain.StudentCourse {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      interface com.example.tms.presenter.IActivityStudentPresent {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      interface com.example.tms.presenter.IBasePresenter {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      interface com.example.tms.presenter.IFragmentAdminPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      interface com.example.tms.presenter.IFragmentLecturerPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      interface com.example.tms.presenter.IFragmentStudentPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      interface com.example.tms.presenter.ILoginPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      interface com.example.tms.presenter.IStudentCoursePresenter {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      namespace impl {
+        class com.example.tms.presenter.impl.ActivityStudentPresenteImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      namespace impl {
+        class com.example.tms.presenter.impl.FragmentAdminPresentImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      namespace impl {
+        class com.example.tms.presenter.impl.FragmentLecturerPresentImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      namespace impl {
+        class com.example.tms.presenter.impl.FragmentStudentPresentImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      namespace impl {
+        class com.example.tms.presenter.impl.LoginPersenterImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace presenter {
+      namespace impl {
+        class com.example.tms.presenter.impl.StudentCourseImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.Fragment {
+      class com.example.tms.ui.Fragment.CouresAsk {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.Fragment {
+      class com.example.tms.ui.Fragment.CourseCheckin {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.Fragment {
+      class com.example.tms.ui.Fragment.CourseDiscuss {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.Fragment {
+      class com.example.tms.ui.Fragment.FragmentAdmin {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.Fragment {
+      class com.example.tms.ui.Fragment.FragmentLecturer {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.Fragment {
+      class com.example.tms.ui.Fragment.FragmentStudent {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.ActivityAdmin {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.ActivityAdmin_ViewBinding {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.ActivityLecturer {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.ActivityLecturer_ViewBinding {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.ActivityStudent {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.ActivityStudentCourse {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.ActivityStudent_ViewBinding {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.Login {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.Login_ViewBinding {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      class com.example.tms.ui.activity.StartActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        class com.example.tms.ui.activity.sub.PasswordChange {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        class com.example.tms.ui.activity.sub.PasswordChange_ViewBinding {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace admin {
+          class com.example.tms.ui.activity.sub.admin.AddAdmin {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace admin {
+          class com.example.tms.ui.activity.sub.admin.AddLecturer {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace admin {
+          class com.example.tms.ui.activity.sub.admin.AddStudent {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace admin {
+          class com.example.tms.ui.activity.sub.admin.ChangeAccountAdmin {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace admin {
+          class com.example.tms.ui.activity.sub.admin.ChangeAccountLecturer {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace admin {
+          class com.example.tms.ui.activity.sub.admin.ChangeAccountStudent {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace admin {
+          class com.example.tms.ui.activity.sub.admin.ChangeCourseSet {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace admin {
+          class com.example.tms.ui.activity.sub.admin.DeleteChangeLecturer {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace admin {
+          class com.example.tms.ui.activity.sub.admin.DeleteChangeStudent {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace lecturer {
+          class com.example.tms.ui.activity.sub.lecturer.ChangeStudentScore {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace lecturer {
+          class com.example.tms.ui.activity.sub.lecturer.LecturerAboutMe {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace lecturer {
+          class com.example.tms.ui.activity.sub.lecturer.LecturerCourseInfo {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace lecturer {
+          class com.example.tms.ui.activity.sub.lecturer.LecturerCourseInfo_ViewBinding {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace student {
+          class com.example.tms.ui.activity.sub.student.AboutMe {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace student {
+          class com.example.tms.ui.activity.sub.student.AboutMe_ViewBinding {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace student {
+          class com.example.tms.ui.activity.sub.student.ChooseCourse {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace student {
+          class com.example.tms.ui.activity.sub.student.ChooseCourse_ViewBinding {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.activity {
+      namespace sub {
+        namespace student {
+          class com.example.tms.ui.activity.sub.student.SubmitMessage {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.adaptor {
+      class com.example.tms.ui.adaptor.ChooseCourseAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace ui.adaptor {
+      class com.example.tms.ui.adaptor.FragmentPagerAdaptor {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace utils {
+      class com.example.tms.utils.AlertDialogBuilder {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace utils {
+      class com.example.tms.utils.CommonMethon {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace utils {
+      class com.example.tms.utils.Constans {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace utils {
+      class com.example.tms.utils.DBOpenHelper {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace utils {
+      class com.example.tms.utils.HttpUtil {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace utils {
+      class com.example.tms.utils.ImageStore {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace utils {
+      class com.example.tms.utils.MD5 {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace view {
+      interface com.example.tms.view.IActivityLecturerCallback {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace view {
+      interface com.example.tms.view.IActivityStudentCallback {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace view {
+      interface com.example.tms.view.IFragmentAdminCallback {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace view {
+      interface com.example.tms.view.IFragmentLectureCallback {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace view {
+      interface com.example.tms.view.IFragmentStudentCallback {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace view {
+      interface com.example.tms.view.ILoginCallback {
+      }
+    }
+  }
+  
+
+  namespace com.example.tms {
+    namespace view {
+      interface com.example.tms.view.IStudentCourseCallback {
+      }
+    }
+  }
+  
+
+  com.example.tms.presenter.impl.ActivityStudentPresenteImpl .up.|> com.example.tms.presenter.IActivityStudentPresent
+  com.example.tms.presenter.impl.ActivityStudentPresenteImpl o-- com.example.tms.view.IActivityStudentCallback : mCallback
+  com.example.tms.presenter.impl.FragmentAdminPresentImpl .up.|> com.example.tms.presenter.IFragmentAdminPresenter
+  com.example.tms.presenter.impl.FragmentAdminPresentImpl o-- com.example.tms.view.IFragmentAdminCallback : mCallback
+  com.example.tms.presenter.impl.FragmentLecturerPresentImpl .up.|> com.example.tms.presenter.IFragmentLecturerPresenter
+  com.example.tms.presenter.impl.FragmentLecturerPresentImpl o-- com.example.tms.view.IFragmentLectureCallback : mCallback
+  com.example.tms.presenter.impl.FragmentStudentPresentImpl .up.|> com.example.tms.presenter.IFragmentStudentPresenter
+  com.example.tms.presenter.impl.FragmentStudentPresentImpl o-- com.example.tms.view.IFragmentStudentCallback : mCallback
+  com.example.tms.presenter.impl.LoginPersenterImpl .up.|> com.example.tms.presenter.ILoginPresenter
+  com.example.tms.presenter.impl.LoginPersenterImpl o-- com.example.tms.view.ILoginCallback : mCallback
+  com.example.tms.presenter.impl.StudentCourseImpl .up.|> com.example.tms.presenter.IStudentCoursePresenter
+  com.example.tms.presenter.impl.StudentCourseImpl o-- com.example.tms.view.IStudentCourseCallback : mCallbackAsk
+  com.example.tms.presenter.impl.StudentCourseImpl o-- com.example.tms.view.IStudentCourseCallback : mCallbackCheckin
+  com.example.tms.presenter.impl.StudentCourseImpl o-- com.example.tms.view.IStudentCourseCallback : mCallbackDiscuss
+  com.example.tms.ui.Fragment.CouresAsk .up.|> com.example.tms.view.IStudentCourseCallback
+  com.example.tms.ui.Fragment.CouresAsk -up-|> androidx.fragment.app.Fragment
+  com.example.tms.ui.Fragment.CouresAsk o-- com.example.tms.presenter.IStudentCoursePresenter : mPresemter
+  com.example.tms.ui.Fragment.CourseCheckin .up.|> com.example.tms.view.IStudentCourseCallback
+  com.example.tms.ui.Fragment.CourseCheckin -up-|> androidx.fragment.app.Fragment
+  com.example.tms.ui.Fragment.CourseCheckin o-- com.example.tms.presenter.impl.StudentCourseImpl : mPresemter
+  com.example.tms.ui.Fragment.CourseDiscuss .up.|> com.example.tms.view.IStudentCourseCallback
+  com.example.tms.ui.Fragment.CourseDiscuss -up-|> androidx.fragment.app.Fragment
+  com.example.tms.ui.Fragment.CourseDiscuss o-- com.example.tms.presenter.impl.StudentCourseImpl : mPresenter
+  com.example.tms.ui.Fragment.FragmentAdmin .up.|> com.example.tms.view.IFragmentAdminCallback
+  com.example.tms.ui.Fragment.FragmentAdmin -up-|> androidx.fragment.app.Fragment
+  com.example.tms.ui.Fragment.FragmentAdmin o-- com.example.tms.presenter.impl.FragmentAdminPresentImpl : mPresent
+  com.example.tms.ui.Fragment.FragmentLecturer .up.|> com.example.tms.view.IFragmentLectureCallback
+  com.example.tms.ui.Fragment.FragmentLecturer -up-|> androidx.fragment.app.Fragment
+  com.example.tms.ui.Fragment.FragmentLecturer o-- com.example.tms.presenter.IFragmentLecturerPresenter : mLecturerPresenter
+  com.example.tms.ui.Fragment.FragmentStudent .up.|> com.example.tms.view.IFragmentStudentCallback
+  com.example.tms.ui.Fragment.FragmentStudent -up-|> androidx.fragment.app.Fragment
+  com.example.tms.ui.Fragment.FragmentStudent o-- com.example.tms.presenter.impl.FragmentStudentPresentImpl : mStudentPresent
+  com.example.tms.ui.activity.ActivityAdmin -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.ActivityAdmin o-- com.example.tms.ui.Fragment.FragmentAdmin : common_fragment
+  com.example.tms.ui.activity.ActivityAdmin o-- com.example.tms.ui.Fragment.FragmentLecturer : lecturer_Fragment
+  com.example.tms.ui.activity.ActivityAdmin o-- com.example.tms.ui.Fragment.FragmentStudent : student_Fragment
+  com.example.tms.ui.activity.ActivityAdmin_ViewBinding .up.|> butterknife.Unbinder
+  com.example.tms.ui.activity.ActivityAdmin_ViewBinding o-- com.example.tms.ui.activity.ActivityAdmin : target
+  com.example.tms.ui.activity.ActivityLecturer -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.ActivityLecturer o-- com.example.tms.utils.ImageStore : imageStore
+  com.example.tms.ui.activity.ActivityLecturer_ViewBinding .up.|> butterknife.Unbinder
+  com.example.tms.ui.activity.ActivityLecturer_ViewBinding o-- com.example.tms.ui.activity.ActivityLecturer : target
+  com.example.tms.ui.activity.ActivityStudent .up.|> com.example.tms.view.IActivityStudentCallback
+  com.example.tms.ui.activity.ActivityStudent -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.ActivityStudent o-- com.example.tms.utils.ImageStore : imageStore
+  com.example.tms.ui.activity.ActivityStudent o-- com.example.tms.presenter.impl.ActivityStudentPresenteImpl : mPresente
+  com.example.tms.ui.activity.ActivityStudentCourse -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.ActivityStudentCourse o-- com.example.tms.ui.adaptor.FragmentPagerAdaptor : mAdaptor
+  com.example.tms.ui.activity.ActivityStudent_ViewBinding .up.|> butterknife.Unbinder
+  com.example.tms.ui.activity.ActivityStudent_ViewBinding o-- com.example.tms.ui.activity.ActivityStudent : target
+  com.example.tms.ui.activity.Login .up.|> com.example.tms.view.ILoginCallback
+  com.example.tms.ui.activity.Login -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.Login o-- com.example.tms.presenter.impl.LoginPersenterImpl : mPersenter
+  com.example.tms.ui.activity.Login_ViewBinding .up.|> butterknife.Unbinder
+  com.example.tms.ui.activity.Login_ViewBinding o-- com.example.tms.ui.activity.Login : target
+  com.example.tms.ui.activity.StartActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.PasswordChange -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.PasswordChange_ViewBinding .up.|> butterknife.Unbinder
+  com.example.tms.ui.activity.sub.PasswordChange_ViewBinding o-- com.example.tms.ui.activity.sub.PasswordChange : target
+  com.example.tms.ui.activity.sub.admin.AddAdmin -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.admin.AddLecturer -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.admin.AddStudent .up.|> android.view.View.OnClickListener
+  com.example.tms.ui.activity.sub.admin.AddStudent -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.admin.ChangeAccountAdmin -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.admin.ChangeAccountLecturer -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.admin.ChangeAccountStudent -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.admin.ChangeCourseSet .up.|> android.view.View.OnClickListener
+  com.example.tms.ui.activity.sub.admin.ChangeCourseSet -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.admin.DeleteChangeLecturer .up.|> android.view.View.OnClickListener
+  com.example.tms.ui.activity.sub.admin.DeleteChangeLecturer -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.admin.DeleteChangeStudent .up.|> android.view.View.OnClickListener
+  com.example.tms.ui.activity.sub.admin.DeleteChangeStudent -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.lecturer.ChangeStudentScore -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.lecturer.LecturerAboutMe .up.|> android.view.View.OnClickListener
+  com.example.tms.ui.activity.sub.lecturer.LecturerAboutMe -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.lecturer.LecturerCourseInfo -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.lecturer.LecturerCourseInfo_ViewBinding .up.|> butterknife.Unbinder
+  com.example.tms.ui.activity.sub.lecturer.LecturerCourseInfo_ViewBinding o-- com.example.tms.ui.activity.sub.lecturer.LecturerCourseInfo : target
+  com.example.tms.ui.activity.sub.student.AboutMe -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.student.AboutMe_ViewBinding .up.|> butterknife.Unbinder
+  com.example.tms.ui.activity.sub.student.AboutMe_ViewBinding o-- com.example.tms.ui.activity.sub.student.AboutMe : target
+  com.example.tms.ui.activity.sub.student.ChooseCourse .up.|> android.view.View.OnClickListener
+  com.example.tms.ui.activity.sub.student.ChooseCourse -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.activity.sub.student.ChooseCourse o-- com.example.tms.model.Api : mApi
+  com.example.tms.ui.activity.sub.student.ChooseCourse o-- com.example.tms.ui.adaptor.ChooseCourseAdapter : mChooseCourseAdapter
+  com.example.tms.ui.activity.sub.student.ChooseCourse_ViewBinding .up.|> butterknife.Unbinder
+  com.example.tms.ui.activity.sub.student.ChooseCourse_ViewBinding o-- com.example.tms.ui.activity.sub.student.ChooseCourse : target
+  com.example.tms.ui.activity.sub.student.SubmitMessage -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.tms.ui.adaptor.ChooseCourseAdapter -up-|> android.widget.BaseAdapter
+  com.example.tms.ui.adaptor.ChooseCourseAdapter o-- com.example.tms.ui.adaptor.ChooseCourseAdapter.ViewHolder : mViewHolder
+  com.example.tms.ui.adaptor.FragmentPagerAdaptor -up-|> androidx.fragment.app.FragmentPagerAdapter
+  com.example.tms.utils.DBOpenHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

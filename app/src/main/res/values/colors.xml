@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#108ee9</color>
+    <color name="colorSecondary">#8B108EE9</color>
+    <color name="colorPrimaryDark">#D54747</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorFragment">#ECD8DF</color>
+    <color name="plum">#DDA0DD</color> <!--洋李色 -->
+    <color name="white">#ffff</color>
+    <color name="gray">#eaeaea</color>
+    <color name="black">#000</color>
+</resources>

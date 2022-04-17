@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/student"
+            android:icon="@drawable/ic_student"
+            android:title="学生"/>
+        <item
+            android:id="@+id/lecturer"
+            android:icon="@drawable/ic_lecturer"
+            android:title="讲师"/>
+        <item
+            android:id="@+id/admin"
+            android:icon="@drawable/ic_admin"
+            android:title="管理员"/>
+    </group>
+</menu>

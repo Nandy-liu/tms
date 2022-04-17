@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/student_backup_qingchu"
+        android:icon="@drawable/ic_delete"
+        android:title="清除"
+
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/student_backup_add"
+        android:icon="@drawable/ic_add"
+        android:title="增加学员信息"
+        app:showAsAction="ifRoom" />
+
+</menu>

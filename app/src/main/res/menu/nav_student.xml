@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_myinfo"
+            android:checkable="true"
+            android:icon="@drawable/me"
+            android:title="我的信息" />
+        <item
+            android:id="@+id/nav_menu_feedback"
+            android:checkable="true"
+            android:icon="@drawable/ic_message"
+            android:title="反馈" />
+        <item
+            android:id="@+id/nav_menu_changeacc"
+            android:checkable="true"
+            android:icon="@drawable/qiehuan"
+            android:title="切换账户" />
+        <item
+            android:id="@+id/nav_menu_look_hcourse"
+            android:checkable="true"
+            android:icon="@drawable/book"
+            android:title="选课结果" />
+    </group>
+</menu>

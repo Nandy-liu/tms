@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tms">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="企业培训管理系统"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoActivityFULLscreen">
+        <activity android:name=".ui.activity.sub.lecturer.LecturerAboutMe" />
+        <activity android:name=".ui.activity.sub.lecturer.LecturerCourseInfo" />
+        <activity android:name=".ui.activity.sub.admin.AddAdmin" />
+        <activity
+            android:name="com.example.tms.ui.activity.ActivityAdmin"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.activity.AddFeedback" />
+        <activity android:name=".ui.activity.sub.admin.ModifiedCourse" />
+        <activity android:name=".ui.activity.sub.lecturer.ChangeStudentScore" />
+        <activity android:name=".ui.activity.sub.admin.ModifiedLecturer" />
+        <activity android:name=".ui.activity.sub.lecturer.AddCourse" />
+        <activity android:name=".ui.activity.sub.lecturer.Answer" />
+        <activity android:name=".ui.activity.sub.admin.AddLecturer" />
+        <activity android:name=".ui.activity.ActivityLecturer" />
+        <activity
+            android:name=".ui.activity.ActivityStudentCourse"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.activity.sub.student.AboutMe" />
+        <activity android:name=".ui.activity.sub.student.ChooseCourse" />
+        <activity android:name=".ui.activity.ActivityStudent" />
+        <activity android:name="com.example.tms.ui.activity.PasswordChange" />
+        <activity android:name=".ui.activity.sub.admin.ChangeAccount" />
+        <activity android:name="com.example.tms.ui.activity.Login" />
+        <activity
+            android:name="com.example.tms.ui.activity.StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.sub.admin.AddStudent" />
+        <activity android:name=".ui.activity.sub.admin.ModifiedStudent" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.tms.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

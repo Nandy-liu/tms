@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".ui.activity.sub.lecturer.LecturerCourseInfo">
+    <ListView
+        android:id="@+id/listview_student_choose_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/text_tongji">
+    </ListView>
+
+    <TextView
+        android:id="@+id/text_tongji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/ln"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/orderby_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/button_background"
+            android:text="按工号排序"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/orderby_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/button_background"
+            android:text="按成绩排序"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/orderby_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/button_background"
+            android:text="按姓名排序"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_average_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/button_background"
+            android:text="平均成绩"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

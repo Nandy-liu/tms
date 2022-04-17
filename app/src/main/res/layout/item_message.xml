@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_margin="1dp"
+            android:background="@drawable/bg_round_white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/warp_warp"
+                android:text="账号:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/message_id"
+                style="@style/match_wrap"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_margin="1dp"
+            android:background="@drawable/bg_round_white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/warp_warp"
+                android:text="姓名:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/message_name"
+                style="@style/match_wrap"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_margin="1dp"
+            android:background="@drawable/bg_round_white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/warp_warp"
+                android:text="公司:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/message_department"
+                style="@style/match_wrap"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_margin="1dp"
+            android:background="@drawable/bg_round_white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/warp_warp"
+                android:text="留言:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/message_content"
+                style="@style/match_wrap"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+</LinearLayout>

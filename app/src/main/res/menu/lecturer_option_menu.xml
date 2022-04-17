@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/lecturer_message"
+        android:icon="@drawable/ic_message"
+        android:title="消息"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/lecturer_add_course"
+        android:icon="@drawable/ic_add"
+        android:title="添加课程"
+        app:showAsAction="ifRoom" />
+</menu>
