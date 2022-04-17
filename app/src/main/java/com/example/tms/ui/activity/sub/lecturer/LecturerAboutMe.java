@@ -55,7 +55,7 @@ public class LecturerAboutMe extends AppCompatActivity{
     private Intent mIntentParent;
     private int mSpinnerPosition;
     private Api mApi;
-
+private  ArrayAdapter l;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
