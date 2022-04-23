@@ -73,6 +73,8 @@ public class FragmentLecturer extends BaseFragment<IFragmentLecturer.IView, Frag
         switch (item.getItemId()) {
             case R.id.lecturer_backup_qingchu:
                 listView.setAdapter(null);
+                mEditText.setText("");
+                mEtById.setText("");
                 break;
             case R.id.lecturer_backup_add:
                 Intent intent_add_lecturer = new Intent(getActivity(), AddLecturer.class);
@@ -160,7 +162,7 @@ public class FragmentLecturer extends BaseFragment<IFragmentLecturer.IView, Frag
             HashMap<String, Object> map_item = (HashMap<String, Object>) listView.getItemAtPosition(position);
             Intent intent = new Intent(getActivity(), ModifiedLecturer.class);
             //获取map中的三项数据，并放入intent
-            intent.putExtra("id", map_item.get("id") + "");
+            intent.putExtra("lecturer_id", map_item.get("id") + "");
             intent.putExtra("name", map_item.get("name") + "");
             intent.putExtra("sex", map_item.get("sex") + "");
             intent.putExtra("age", map_item.get("age") + "");

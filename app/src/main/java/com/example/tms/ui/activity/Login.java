@@ -42,7 +42,7 @@ import butterknife.OnTouch;
  */
 @SuppressLint("NonConstantResourceId")
 public class Login extends BaseActivity<ILogin.loginView, LoginPresenterImpl> implements ILogin.loginView {
-    private int mRole = 1;
+    private int mRole = 0;
     private SQLiteDatabase mDb;
     private SharedPreferences mSharedPreferences;
     @BindView(R.id.checkbox_remember)

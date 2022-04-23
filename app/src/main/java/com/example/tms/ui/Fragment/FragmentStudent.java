@@ -76,6 +76,9 @@ public class FragmentStudent extends BaseFragment<IFragmentStudent.IView, Fragme
         switch (item.getItemId()) {
             case R.id.student_backup_qingchu:
                 listView.setAdapter(null);
+                mEditById.setText("");
+                mEditTextByDepartment.setText("");
+                mEditTextByName.setText("");
                 break;
             case R.id.student_backup_add:
                 Intent intent = new Intent(getActivity(), AddStudent.class);

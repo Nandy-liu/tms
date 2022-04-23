@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/gray"
     tools:context=".ui.activity.sub.lecturer.LecturerCourseInfo">
+
     <ListView
         android:id="@+id/listview_student_choose_info"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/text_tongji">
-    </ListView>
+        android:layout_above="@+id/text_tongji"/>
 
     <TextView
         android:id="@+id/text_tongji"
